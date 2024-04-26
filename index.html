@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto-final</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navegador">
+        <a href="./index.html">
+            <svg  width="200" height="80">
+                <!-- pantalla -->
+                <rect x="45" y="5" width="60" height="35" rx="5" fill="#F0E9D2" id="pantalla1"></rect>
+                <rect x="50" y="10" width="50" height="25" rx="5" fill="#495579" id="pantalla2"></rect>
+                <!-- teclado -->
+                <polygon points="55 45 ,95 45,115 62,30 62" fill="#F0E9D2" id="inferior1"></polygon>
+                <polygon points="57 48 ,92 48,104 58,43 58" fill="#495579" id="inferior2"></polygon>
+                <!-- Mouse -->
+                <circle cx="125" cy="55" r="7" fill="#F0E9D2" id="mouse"></circle>
+                <rect x="105" y="29" width="20" height="5" fill="#495579" id="cable"></rect>
+                <rect x="122" y="29" width="5" height="20" fill="#495579" id="cable"></rect>
+                <!-- hombrecito -->
+                <circle cx="30" cy="55" r="5" fill="#919990" id="cabeza"></circle>
+                <line x1="30" y1="60" x2="30" y2="70" stroke="#919990" stroke-width="2" id="cuerpo"></line> <!-- Cuerpo -->
+                <line x1="30" y1="65" x2="25" y2="67" stroke="#919990" stroke-width="2" id="brazo-izq"></line> <!-- Brazo izquierdo -->
+                <line x1="30" y1="65" x2="35" y2="67" stroke="#919990" stroke-width="2" id="brazo-der"></line> <!-- Brazo derecho -->
+                <line x1="30" y1="70" x2="25" y2="75" stroke="#919990" stroke-width="2" id="pata-izq"></line> <!-- Pierna izquierda -->
+                <line x1="30" y1="70" x2="35" y2="75" stroke="#919990" stroke-width="2" id="pata-der"></line> <!-- Pierna derecha -->
+         
+            </svg>
+        </a>
+        <ul class="lista">
+            <li class="itemLista"><a href="./menu/historia.html" class="textBtn">HISTORIA</a></li>
+            <li class="itemLista"><a href="./menu/juego.html" class="textBtn">JUGUEMOS</a></li>
+        </ul>
+    </nav>
+    <header class="encabezado">
+        <h1 id="titulo1">PROGRAMACION E HISTORIA</h1>
+        <!-- <img src="./imagenes/codigo.jpg" alt="" class="imgCodigo"> -->
+    </header>
+    
+    <main>    
+        <section id="titulo2">
+            <h2>CONTENIDO</h2>
+        </section>
+        <section class="contenedor">
+            <div class="categoria">
+                <img src="./imagenes/img1.jpg" alt="Imagen de programadores" class="imgHistoria">
+                <p>Conozcamos un poco sobre la historia de la programación</p>
+                <a href="./menu/historia.html">Ir a la Historia</a>
+            </div>
+
+            <div class="categoria">
+                <img src="./imagenes/img2.jpg" alt="Imagen del juego" class="imgJuego">
+                <p>Juguemos un poco sobre la computación</p>
+                <a href="./menu/juego.html">Ir al Juego</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="piePagina">
+            <img src="./imagenes/logo.png" alt="Logo" class="logoPie">
+            <span><p class="text3">PROGRAMACION<br>E<br>HISTORIA</p></span>
+        </div>
+        <div class="creditos">
+            <p>Sitio con fines educativos - Creado por M.Victoria Lopez</p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
