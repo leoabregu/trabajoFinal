@@ -14,9 +14,14 @@ function jugamos() {
                     e.preventDefault();
                 });
                 caja.addEventListener("drop", function(e) {
+                    e.preventDefault();
                     caja.appendChild(selected);
                     selected = null;
-                    
+                    caja.querySelector("p").style.display = "none";
+                });
+
+                caja.addEventListener("dragleave", function(e) {
+                    caja.querySelector("p").style.display = "block";
                 });
             }
 
@@ -24,6 +29,7 @@ function jugamos() {
                 e.preventDefault();
             });
             imagenesOrigen.addEventListener("drop", function(e) {
+                e.preventDefault();
                 imagenesOrigen.appendChild(selected);
                 selected = null;
             });

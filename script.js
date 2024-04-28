@@ -15,3 +15,17 @@ function botones() {
     });    
 }
 botones();
+
+let tiempoVideo = document.getElementById('tiempo_video');
+
+function segundosAMinutos(segundos) {
+    const minutos = Math.floor(segundos / 60);
+    const segundosRestantes = Math.floor(segundos % 60);
+    return `${minutos}:${segundosRestantes < 10 ? '0' : ''}${segundosRestantes}`;
+};
+
+function actualizarTiempo() {
+    tiempoVideo.textContent = `Duración del video ${segundosAMinutos(video.currentTime)} / ${segundosAMinutos(video.duration)}`;
+};
+
+video.addEventListener('timeupdate', actualizarTiempo);

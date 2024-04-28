@@ -427,7 +427,7 @@ footer {
     align-items: center;
 }
 
-#cajas-juego {
+#cajas-juego, #imagenes-juego {
     display: flex;
     flex-direction: row;
     padding-top: 20px;
